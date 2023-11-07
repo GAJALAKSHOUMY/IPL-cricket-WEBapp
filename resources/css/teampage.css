@@ -1,0 +1,20 @@
+.team{
+    color: white;
+    padding: 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(324deg, rgba(2,0,36,1) 0%, rgba(50,50,115,1) 26%, rgba(1,38,89,1) 43%, rgba(24,73,142,1) 61%, rgba(4,46,103,1) 77%);
+}
+
+.team__details{
+    display: flex;
+}
+
+.team__details__logo img{
+    width: 300px;
+    height: 300px;
+}
+
+.team__details__stats{
+    margin-left: 20px;
+    transition: 1s all;
+}

@@ -1,0 +1,98 @@
+:root {
+  --navbar-color: #031537;
+  --button-color: #dc5034;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Lato','Montserrat', 'Roboto', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+}
+
+.navbar {
+  background-color: var(--navbar-color);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  height: 75px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav__logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#cards {
+  padding: 50px 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+
+  @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 500px) {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0px;
+  margin: 0px 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card__name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.card__logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#card__logo__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__details{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+}
+
+.card__count .top__batsman .top__bowler .championships {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
